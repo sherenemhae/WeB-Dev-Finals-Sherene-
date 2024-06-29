@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-transform: initial;
+  box-sizing: border-box;
+  transition: all .3s ease;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+html {
+  font-size: 90%;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 0 8rem;
+  width: 100%;
+}
+
+.label {
+  font-size: 1.1rem;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+section.home {
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.home .home-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("beach.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.home .home-box nav {
+  width: 100%;
+  height: 65px;
+  background: linear-gradient(rgb(255, 255, 255, .2), rgb(255, 255, 255, .2));
+  backdrop-filter: blur(7px);
+  border-radius: .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  z-index: 10;
+  position: relative;
+}
+
+.home .home-box nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home .home-box nav .logo .bar {
+  font-size: 1.35rem;
+  color: #274472;
+  cursor: pointer;
+  display: none;
+}
+
+.home .home-box nav .logo .bar:hover {
+  color: rgb(255 255 255/70%);
+}
+
+.home .home-box nav .logo h3 {
+  color: #274472;
+  font-weight: 400;
+}
+
+.home .home-box nav .menu .close {
+  display: none;
+}
+
+.home .home-box nav .menu ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.home .home-box nav .menu ul li a {
+  color: #274472;
+  font-weight: 400;
+}
+
+.home .home-box nav .menu ul li a:hover {
+  color: rgb(255 255 255/70%);
+}
+
+.home .home-box .content {
+  width: 100%;
+  height: calc(100% - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0, -65px);
+}
+
+.home .home-box .content h5 {
+  text-transform: uppercase;
+  color: black;
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.home .home-box .content h1 {
+  font-size: 4rem;
+  max-width: 50rem;
+  color: #274472;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.home .home-box .content p {
+  color: black;
+  font-weight: 300;
+  max-width: 40rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.baba {
+    padding: 8px;
+    margin: 0 auto; 
+    max-width: 2000px;
+}
+
+.kemerutsababa {
+    text-align: center;
+    color: #274472;
+}
+
+.kemerutsababa h2 {
+  color: #274472;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.kemerutsababa p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.place ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+
+    overflow: auto;
+    width: fit-content;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: -30px;
+
+}
+
+.place li {
+    flex-shrink: 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 12px;
+    background-color: #5885AF;
+    border-radius: 1em;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 360px;
+    height: 380px;
+    margin-top: 20px;
+
+    overflow: hidden;
+}
+
+.place li:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: scale(1.01);
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.place li:hover img {
+    width: 110%;
+    margin-left: -5%;
+}
+
+.place li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.place li:hover::before {
+    opacity: 1;
+}
+
+.place li::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    background-color: rgb(255, 87, 87);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 9px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 13px;
+    line-height: 30px;
+    font-size: 7px;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.place li:hover::after {
+    top: 40%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.place li:active {
+    transform: scale(0.99);
+}
+
+.place li img {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+}
+
+.place h2, h3, p {
+    padding: 12px;
+    padding-top: 0;
+    z-index: 3;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.place li h3, li p {
+    z-index: 1;
+    position: relative;
+    margin: 0;
+}
+
+.place li h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.place p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 5px;
+    color: #666;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    max-width: 90vw;
+}
+
+.place h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.place-item {
+    color: #fff; /* Change to the color you prefer */
+    
+}
+
+.place-item h3 {
+    color: #fff; /* Ensure headings inside place-item are also styled */
+    font-size: 24px;
+}
+
+.place-item p {
+    color: #f0f0f0; /* Adjust paragraph text color */
+    font-size: 12px;
+}
